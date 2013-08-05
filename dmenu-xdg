@@ -1,0 +1,3 @@
+SEARCH_DIRS=["/usr/share", "/home/lharding"]
+TERM_CMD="urxvtc -hold -e "
+BROWSER_CMD="dwb "
