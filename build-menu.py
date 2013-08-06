@@ -2,7 +2,7 @@
 
 from xdg.DesktopEntry import DesktopEntry
 import glob
-import md5
+import md5 #TODO: use hashlib instead
 #import sys
 import os
 import codecs
@@ -76,3 +76,4 @@ for exc in execs.values():
 
 menuFile.close()
 execFile.close()
+
