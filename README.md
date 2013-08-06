@@ -4,7 +4,7 @@ Script for scanning XDG .desktop files and launching them using dmenu.
 
 ## Installation
 
-Requires Python 2.4+ and [pyxdg](http://freedesktop.org/wiki/Software/pyxdg/) for parsing .desktop files.
+Requires Python 2.4+ and [pyxdg](http://freedesktop.org/wiki/Software/pyxdg/) for parsing .desktop files. Oh, and dmenu, obviously.
 
 Run install.sh to copy the scripts into ~/bin, and copy the .conf file into ~/.config/ and set SEARCH_DIRS appropriately.
 
