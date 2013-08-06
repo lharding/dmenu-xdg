@@ -1,4 +1,5 @@
 #!/bin/sh
 cd `dirname $0`
 HASH=`vmenu < xdg-dmenu.cache | awk '{ print $NF }'`
-exec `grep $HASH xdg-exec.cache | cut -d' ' -f 2`
+CMD=`grep $HASH xdg-exec.cache | cut -d' ' -f 2`
+exec sh -c "$CMD"
