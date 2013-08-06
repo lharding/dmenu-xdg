@@ -1,3 +1,4 @@
-SEARCH_DIRS=["/usr/share", "/home/lharding"]
-TERM_CMD="urxvtc -hold -e "
-BROWSER_CMD="dwb "
+#!/bin/sh
+cd `dirname $0`
+HASH=`vmenu < xdg-dmenu.cache | awk '{ print $NF }'`
+exec `grep $HASH xdg-exec.cache | cut -d' ' -f 2`

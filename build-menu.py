@@ -1,3 +1,5 @@
+#!/usr/bin/python2
+
 from xdg.DesktopEntry import DesktopEntry
 import glob
 import md5
@@ -8,7 +10,7 @@ import codecs
 
 HOMEDIR = os.getenv("HOME") 
 
-execfile(HOMEDIR+'/.config/dmenu-xdg')
+execfile(HOMEDIR+'/.config/dmenu-xdg.conf')
 
 menuFile = codecs.open(HOMEDIR+'/bin/xdg-dmenu.cache', 'w', encoding='utf-8')
 execFile = codecs.open(HOMEDIR+'/bin/xdg-exec.cache', 'w', encoding='utf-8')
